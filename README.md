@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Next.js + Supabase + Prisma 초기 실행 템플릿
 
-## Getting Started
+Next.js, Supabase, Prisma를 사용하는 웹 애플리케이션을  
+빠르게 시작할 수 있는 초기 실행 템플릿입니다.
 
-First, run the development server:
+## supabase란?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Supabase는 오픈 소스 Firebase 대체 서비스로, 실시간 데이터베이스, 인증, 스토리지, 서버리스 기능을 제공합니다. Supabase와 Next.js를 사용하여 다양한 기능을 구현할 수 있습니다. 여기서는 주요 기능과 Next.js 코드 예시를 통해 각 기능을 설명하겠습니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **Supabase 기능**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **인증 (Authentication)**
+   - 사용자 등록 및 로그인
+   - 소셜 로그인 (Google, Facebook 등)
+   - 비밀번호 재설정
+   - 이메일 인증
+   - 멀티팩터 인증
+2. **데이터베이스 (Database)**
+   - PostgreSQL 기반 데이터베이스
+   - 실시간 데이터베이스 업데이트
+   - 복잡한 쿼리 및 트리거
+   - 로우 레벨 보안 (Row Level Security)
+3. **스토리지 (Storage)**
+   - 파일 업로드 및 관리
+   - 퍼블릭 및 프라이빗 파일
+   - 이미지 최적화 및 변환
+4. **서버리스 기능 (Serverless Functions)**
+   - Edge Functions을 통한 서버리스 함수
+   - RESTful API 엔드포인트 생성

@@ -1,0 +1,20 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.droppable-container {
+  background: #fafafa;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.draggable-item {
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
