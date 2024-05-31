@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css';
+import Link from "next/link";
 
 const Home: React.FC = () => {
   const router = useRouter();
@@ -44,10 +45,32 @@ const Home: React.FC = () => {
   };
 
 
+// === 파이썬 코드 호출
+  const [message, setMessage] = useState('');
+
+  const callApi = async () => {
+    try {
+      const response = await fetch('/api/python');
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const data = await response.json();
+      setMessage(data.message);
+    } catch (error) {
+      console.error('Failed to fetch:', error);
+      setMessage('Error fetching data');
+    }
+  };
+
+
   return (
     <div>
       <h1>Welcome to My App</h1>
       <p>This is the home page.</p>
+      <button onClick={callApi} className="font-mono font-bold">
+        Call API
+      </button>
+      {message && <p>{message}</p>}
       <button className={styles.button} onClick={movePlayground}>playground</button>
       <button className={styles.button} onClick={navigateToRegister}>Register</button>
       <button className={styles.button} onClick={navigateToLogin}>Login</button>
