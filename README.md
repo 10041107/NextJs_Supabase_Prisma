@@ -1,6 +1,6 @@
-## Next.js + Supabase + Prisma Initial Setup Template
+## Next.js + Supabase + Prisma + Python(FastAPI) Initial Setup Template
 
-This is an initial setup template for a web application using Next.js, Supabase, and Prisma.
+This is an initial setup template for a web application using Next.js, Supabase, Python, and Prisma.
 
 &nbsp;
 
